@@ -1,7 +1,17 @@
 # Knight Tracker
 
-Knight Tracker is a single-page fitness tracker for running, strength training,
-nutrition, body measurements, progress photos, and weekly reviews.
+Knight Tracker v11.0.0 — Foundation Release is a single-page fitness tracker
+for running, strength training, nutrition, body measurements, progress photos,
+and weekly reviews.
+
+V11 focuses on data safety and maintainability:
+
+- Versioned data model
+- Migration framework for V10/V10.3 data
+- Data Safety panel
+- Improved backup, import, and export behavior
+- Standardized edit/delete behavior
+- GitHub Pages compatibility with no build step
 
 ## Run locally
 
@@ -23,6 +33,8 @@ npx serve .
 ## Data storage
 
 The app stores data in the browser using `localStorage` under the key
-`knightTrackerData`. Use the built-in export button before clearing browser
-data or switching devices.
+`knightTrackerData`.
 
+V11 keeps old V10/V10.3 exports importable and migrates older fields into the
+new versioned structure. Use the built-in export button before clearing browser
+data, switching devices, or updating the live GitHub Pages version.
