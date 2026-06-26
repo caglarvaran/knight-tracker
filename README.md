@@ -1,42 +1,144 @@
-# Knight Tracker
+Document ID: KOS-README-001
+Version: 1.0
+Status: Active
+Owner: Codex, Application Engineer
+Approver: Caglar Varan
+Last Updated: 2026-06-26
+Purpose: Serve as the entry point for the Knight OS project.
+Audience: Product, engineering, design, and future contributors.
+Dependencies: PROJECT_CONTEXT.md, CURRENT_STATE.md
+Related Documents: [Project Context](docs/philosophy/PROJECT_CONTEXT.md), [Current State](docs/philosophy/CURRENT_STATE.md), [Product Roadmap](docs/roadmap/Product-Roadmap.md)
+Revision History: 2026-06-26 - README converted into project entry point.
 
-Knight Tracker v12.0.0 — Visual Dashboard Release is a single-page fitness
-tracker for running, strength training, nutrition, body measurements, progress
-photos, and weekly reviews.
+# Knight OS
 
-V12 keeps the V11 data-safe foundation and adds a more visual dashboard:
+## Table of Contents
 
-- Visual KPI cards for running, training, nutrition, body, and 10K readiness
-- Recent Activity Feed instead of plain recent-log pills
-- Weekly Report tab with rule-based coach comments
-- Built-in SVG charts with no external libraries
-- Achievement-style milestone badges
-- Mobile-friendly visual summaries above data tables
-- GitHub Pages compatibility with no build step
+- [Overview](#overview)
+- [Vision](#vision)
+- [Philosophy](#philosophy)
+- [Repository Structure](#repository-structure)
+- [Documentation](#documentation)
+- [Technology](#technology)
+- [Development Process](#development-process)
+- [Contributing](#contributing)
+- [Roadmap](#roadmap)
+- [Documentation Navigation](#documentation-navigation)
 
-## Run locally
+## Overview
 
-Open `index.html` in a browser.
+Knight OS is a Personal Operating System for intentional living.
 
-For a local server:
+The current working application is Knight OS v13.0.0 - Daily Interaction
+Release. The project is moving from passive data entry toward calm, touch-first
+daily habit interaction.
 
-```bash
-npx serve .
+## Vision
+
+Knight OS helps people intentionally build the person they want to become
+through small daily actions.
+
+The objective is not engagement. The objective is transformation.
+
+## Philosophy
+
+Knight OS supports the user. It does not command the user.
+
+The user is the Knight. Knight OS is a trusted companion.
+
+## Repository Structure
+
+```text
+docs/
+  handbook/
+    Book-0-Founders-Letter/
+    Book-I-Constitution/
+    Book-II-Design-System/
+    Book-III-Product-Strategy/
+  philosophy/
+  history/
+  adr/
+  roadmap/
+  releases/
+  templates/
+mockups/
+assets/
+upload-to-github/
+github-ready/
 ```
 
-## GitHub Pages
+## Documentation
 
-1. Push this folder to a GitHub repository.
-2. Go to `Settings` -> `Pages`.
-3. Set the source to the `main` branch and the root folder.
-4. Open the published GitHub Pages URL.
+Documentation is a first-class project asset.
 
-## Data storage
+Official handbook reading order:
 
-The app stores data in the browser using `localStorage` under the key
-`knightTrackerData`.
+1. [Book 0 - The Founder's Letter](docs/handbook/Book-0-Founders-Letter/Founders-Letter.md)
+2. [Book I - The Constitution](docs/handbook/Book-I-Constitution/Constitution.md)
+3. [Book II - The Design System](docs/handbook/Book-II-Design-System/Design-System.md)
+4. [Book III - Product Strategy](docs/handbook/Book-III-Product-Strategy/Product-Strategy.md)
 
-V12 preserves the V11 versioned data model and migration framework. Old V10/V10.3
-exports remain importable, and V11 data continues to load under the same storage
-key. Use the built-in export button before clearing browser data, switching
-devices, or updating the live GitHub Pages version.
+ChatGPT, in the Chief Product Officer role, owns product philosophy and
+handbook content. Codex is responsible for publishing, formatting, linking, and
+maintaining documentation.
+
+## Technology
+
+- GitHub Pages
+- Plain HTML
+- Plain CSS
+- Plain JavaScript
+- localStorage
+- Offline-first
+- No frameworks
+- No build tools
+- No backend
+
+The localStorage key is `knightTrackerData`.
+
+## Development Process
+
+Development follows this order:
+
+1. Vision
+2. Constitution
+3. Design System
+4. Product Strategy
+5. Engineering
+6. Implementation
+
+Code never leads philosophy. Code implements philosophy.
+
+## Contributing
+
+Before changing the application, review:
+
+- [Project Context](docs/philosophy/PROJECT_CONTEXT.md)
+- [Current State](docs/philosophy/CURRENT_STATE.md)
+- [ADR Library](docs/adr/ADR-000.md)
+
+If implementation requires a product decision, stop and document the trade-offs
+before coding.
+
+## Roadmap
+
+See [Product Roadmap](docs/roadmap/Product-Roadmap.md).
+
+## Documentation Navigation
+
+Start here:
+
+1. [Book 0 - The Founder's Letter](docs/handbook/Book-0-Founders-Letter/Founders-Letter.md)
+2. [Book I - The Constitution](docs/handbook/Book-I-Constitution/Constitution.md)
+3. [Book II - The Design System](docs/handbook/Book-II-Design-System/Design-System.md)
+4. [Book III - Product Strategy](docs/handbook/Book-III-Product-Strategy/Product-Strategy.md)
+5. [Project Context](docs/philosophy/PROJECT_CONTEXT.md)
+6. [Historical Records](docs/history/2026-06-26-Sprint-1.1/Historical-Record.md)
+7. [Product Roadmap](docs/roadmap/Product-Roadmap.md)
+8. [ADR Library](docs/adr/ADR-000.md)
+
+Release notes:
+
+- [V11](docs/releases/V11.md)
+- [V12](docs/releases/V12.md)
+- [V13](docs/releases/V13.md)
